@@ -1,0 +1,128 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #606060;
+	font-family: 'Muli', sans-serif;
+}
+
+.navbar-expand-lg {
+	background-color: #006186;
+}
+
+.companyName {
+	font-size: 40px;
+	border-radius: 10%;
+	color: #202020;	
+}
+
+.companyName:hover {
+	text-decoration: none;
+	color: #202020;
+}
+
+.nav-item {
+	color: #fff!important;
+}
+
+#listActive {
+	background-color: #17a2b8;
+	color: #fff;
+}
+
+#topJobOpenings {
+	margin-top: 100px;
+}
+
+.page-link {
+	color: #006186;
+}
+
+.companies img {
+	height: 70px;
+	width: 90px;
+	margin: 10px 0;
+}
+
+div .list-group {
+	margin: 10px;
+}
+
+#navbarNavAltMarkup a:hover {
+	color: white;
+}
+
+footer {
+	background-color: #29334C;
+}
+
+.ulFooter {
+	margin-top: 10px;
+	list-style: none;
+	color: white;
+}
+
+.footerLinks {
+	font-size: 20px;
+	color: #44A1A0;
+}
+
+.ulFooter a {
+	color: white;
+	text-decoration: none;
+}
+
+.footerLinks:hover {
+	text-decoration: none;
+	color: #44A1A0;
+}
+
+.copyright, .copyrightName{
+	color: #fff;
+}
+
+
+/*media queries*/
+
+/*for tablets*/
+@media (min-width: 451px) and (max-width: 768px) {
+
+	.companies {
+		margin-left: 30px;
+	}
+
+}
+
+
+/*mobile */
+@media (min-width: 321px) and (max-width: 450px) {
+
+	.companyName {
+		display: none;
+	}
+
+	#topJobOpenings {
+		margin-top: 75px;
+	}
+
+	.jobimages {
+		margin-bottom: 25px;
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+	.companyName {
+		display: none;
+	}
+
+	#topJobOpenings {
+		margin-top: 75px;
+	}
+
+	.jobimages {
+		margin-bottom: 25px;
+	}
+
+}	

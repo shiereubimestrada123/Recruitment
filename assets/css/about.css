@@ -1,0 +1,194 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #606060;
+	font-family: 'Muli', sans-serif;
+}
+
+.navbar-expand-lg {
+	background-color: #006186;
+}
+
+.companyName {
+	font-size: 40px;
+	border-radius: 10%;
+	color: #202020;	
+}
+
+.companyName:hover {
+	text-decoration: none;
+	color: #202020;
+}
+
+#navbarNavAltMarkup {
+	font-family: 'Muli', sans-serif;
+}
+
+#navbarNavAltMarkup a:hover {
+	color: white;
+}
+
+.nav-item {
+	color: #fff!important;
+}
+
+.positionAbout {
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	flex-direction: column;
+}
+
+#aboutWrapper {
+	margin-top: 120px;
+}
+
+.imgAbout {
+	height: 300px;
+	width: 540px;
+}
+
+.justifyAbout {
+	text-align: justify;
+
+}
+
+.underlineAbout:after {
+	content: "";
+	display: block;
+	margin: 0 auto;
+	width: 30px;
+	padding-top: 10px;
+	border-bottom: 3px solid #606060;
+}
+
+#teamWrapper {
+	background-color: #B0D0D3;
+	margin: 100px 0;
+}
+
+.ourTeam {
+	height: 75px;
+	margin-top: 30px;
+}
+
+.cardSize {
+	width: 18rem;
+}
+
+#teamWrapper .card {
+	border: 0;
+}
+
+#teamWrapper #imgRound {
+	border-radius: 50%;	
+}
+
+footer {
+	background-color: #29334C;
+}
+
+.ulFooter {
+	margin-top: 10px;
+	list-style: none;
+	color: white;
+}
+
+.footerLinks {
+	font-size: 20px;
+	color: #44A1A0;
+}
+
+.ulFooter a {
+	color: white;
+	text-decoration: none;
+}
+
+.footerLinks:hover {
+	text-decoration: none;
+	color: #44A1A0;
+}
+
+.copyright, .copyrightName{
+	color: #fff;
+}
+
+/*media queries*/
+/*for ipad*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	.imgAbout {
+		width: 100%;
+	}
+
+	.cardSize {
+		width: 16rem;
+		overflow-x: hidden;
+	}
+}
+
+/*for tablets*/
+
+@media (min-width: 451px) and (max-width: 768px) {
+	
+	.imgAbout {
+		width: 100%;
+	}
+
+	.cardSize {
+		width: 12rem;
+	}
+
+}
+
+@media (min-width: 321px) and (max-width: 450px) {
+
+	.companyName {
+		display: none;
+	}
+
+	#aboutWrapper {
+		margin-top: 80px;
+	}
+
+	.imgAbout {
+		width: 100%;
+	}
+
+	#order3 {order: 3;}
+	#order4 {order: 4;}
+	#order5 {order: 5;}
+	#order6 {order: 6;}
+	#order7 {order: 7;}
+	#order8 {order: 8;}
+
+	.cardSize {
+		height: auto;
+	}
+
+}
+
+
+/*mobile */
+@media only screen and (max-width: 320px) {
+
+	.companyName {
+		display: none;
+	}
+
+	#aboutWrapper {
+		margin-top: 80px;
+	}
+
+	.imgAbout {
+		width: 100%;
+	}
+	
+	#order3 {order: 3;}
+	#order4 {order: 4;}
+	#order5 {order: 5;}
+	#order6 {order: 6;}
+	#order7 {order: 7;}
+	#order8 {order: 8;}
+}	

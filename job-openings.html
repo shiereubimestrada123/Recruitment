@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0 shrink-to-fit=no">
+		<meta htts-equip="X-UA-compatible" content="IE=Edge">
+
+		<title>Job-Openings</title>
+
+		<!-- bootstrap css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+		<!-- external css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/job-openings.css">
+
+		<!-- font awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+		<!-- google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+
+		<!-- animate css -->
+		<link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+
+		<!-- favicon -->
+		<link rel="icon" type="image/gif/png" href="assets/images/logo.png">
+
+</head>
+<body>
+
+		<!-- start navbar -->
+		<nav class="navbar navbar-expand-lg navbar-light fixed-top">
+			  <a href="index.html" class="companyName ml-2">Job | Portal</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+			    <div class="navbar-nav ml-auto" id="navtems">
+			      <a class="nav-item nav-link active mt-2" href="index.html">Home<span class="sr-only">(current)</span></a>
+			      <a class="nav-item nav-link active mt-2" href="about.html">About</a>
+			      <a class="nav-item nav-link active mt-2" href="#">Job-Openings</a>
+			      <a class="nav-item nav-link active mt-2" href="contact.html">Contact</a>
+				<a class="nav-item nav-link active" href="#login"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#signup">
+		  		Log-In</button></a>
+			    <a class="nav-item nav-link active" href="#signup"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#signup">
+		  		Sign-Up</button></a>
+			    </div>
+			  </div>
+		</nav> 
+		<!-- end of nav -->
+
+		<!-- modal for Login -->
+		<div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Applicant Log-In</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="submit" class="btn btn-info">Log-in</button>
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- end modal for Login -->
+		
+		<!-- modal for Sign-up -->
+		<div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		    	<div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Applicant Sign-In</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <form id="fillup">    
+					  <div class="form-row">
+					    <div class="col-md-6">
+					      <label for="inputEmail4">First Name</label>
+					      <input type="text" class="form-control" placeholder="First name">
+					    </div>
+					    <div class="col-md-6">
+					      <label for="inputEmail4">Last Name</label>
+					      <input type="text" class="form-control" placeholder="Last name"><br>
+					    </div>
+					  </div>												
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputEmail4">Email</label>
+					      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+					    </div>
+					    <div class="form-group col-md-6">
+					      <label for="inputPassword4">Password</label>
+					      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+					    </div>
+					  </div>
+					  <div class="form-group">
+					    <label for="inputAddress">Address</label>
+					    <input type="text" class="form-control" id="inputAddress" placeholder="3rd Floor Caswynn Building, No. 134 Timog Avenue, Sacred Heart, Quezon City, 1103 Metro Manila">
+					  </div>
+					  <div class="form-row">
+					    <div class="form-group col-md-6">
+					      <label for="inputCity">City</label>
+					      <input type="text" class="form-control" id="inputCity">
+					    </div>
+					    <div class="form-group col-md-2">
+					      <label for="inputZip">Zip</label>
+					      <input type="text" class="form-control" id="inputZip">
+					    </div>
+					  </div>
+					  <button type="submit" class="btn btn-info">Sign up</button>	 
+				</form>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- end modal for Sign-up -->
+
+		<div id="topJobOpenings" class="container-fluid wow fadeIn">
+			<div class="row">
+				<div class="col-12 col-md-3 col-lg-3">
+					<h3 class="my-2">Sort By</h3>
+					<div>
+						<ul class="list-group">
+							  <li id="listActive" class="list-group-item">Job Type</li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+							    Full Time
+							    <span class="badge badge-info badge-pill">30</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+							    Part time
+							    <span class="badge badge-info badge-pill">45</span>
+							  </li>
+							  <li class="list-group-item d-flex justify-content-between align-items-center">
+							    Contract
+							    <span class="badge badge-info badge-pill">55</span>
+							  </li>
+						</ul>
+					</div>
+					<div>
+						<ul class="list-group">
+							  <li id="listActive" class="list-group-item">Location</li>
+							  <li class="list-group-item">Makati City</li>
+							  <li class="list-group-item">Quezon City</li>
+							  <li class="list-group-item">Pasig City</li>
+							  <li class="list-group-item">Mandaluyog City</li>
+							  <li class="list-group-item">Cebu City</li>
+						</ul>
+					</div>
+					<div>
+						<ul class="list-group">
+							  <li id="listActive" class="list-group-item">Top Companies</li>
+							  <li class="list-group-item">Accenture</li>
+							  <li class="list-group-item">IBM</li>
+							  <li class="list-group-item">Nestle</li>
+							  <li class="list-group-item">Samsung</li>
+							  <li class="list-group-item">Toyota</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-12 col-md-9 col-lg-6">
+					<div class="description">
+						<nav aria-label="Page navigation example">
+							  <ul class="pagination">
+							    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+							    <li class="page-item"><a class="page-link" href="#">1</a></li>
+							    <li class="page-item"><a class="page-link" href="#">2</a></li>
+							    <li class="page-item"><a class="page-link" href="#">3</a></li>
+							    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+							  </ul>
+						</nav>
+
+						<div class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">Web Developer (Full Stack)</h5>
+							    <h6 class="card-subtitle mb-2 text-muted">Accenture</h6>
+							    <p class="card-text">Candidate must possess at least Bachelor's/College Degree in Computer Science/Information Technology or equivalent. At least 1 Year of working experience in the related field is required for this position. Required Skill(s): HTML, CSS, JavaScript.</p>
+							    <a href="#" class="btn btn-info card-link">Save Job</a>
+							    <a href="#" class="btn btn-info card-link">Apply</a>
+							  </div>
+						</div>
+						<div class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">Admin Assistant</h5>
+							    <h6 class="card-subtitle mb-2 text-muted">Toyota</h6>
+							    <p class="card-text">Responsible for coordinating travel and overnight accommodations for employees. This occupation also involves planning off-site meetings and conventions. Open for fresh graduates.</p>
+							    <a href="#" class="btn btn-info card-link">Save Job</a>
+							    <a href="#" class="btn btn-info card-link">Apply</a>
+							  </div>
+						</div>
+						<div class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">Bank Teller</h5>
+							    <h6 class="card-subtitle mb-2 text-muted">BPI</h6>
+							    <p class="card-text">Join our customer oriented team of front liners! Be responsible in ensuring client satisfaction through friendly and efficient servicing of deposits, withdrawals, bills and loan payments. Render efficient and prompt customer service relative to opening of new accounts and maintenance of existing accounts and by cross selling the products and services of the bank.</p>
+							    <a href="#" class="btn btn-info card-link">Save Job</a>
+							    <a href="#" class="btn btn-info card-link">Apply</a>
+							  </div>
+						</div>
+						<div class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">HR Associate</h5>
+							    <h6 class="card-subtitle mb-2 text-muted">Cebu Pacific</h6>
+							    <p class="card-text">Candidate possess at least a Bachelor’s/College Degree in any field. Excellent English communication skills. Handles volume hiring. Will be assigned in Quezon City or Alabang</p>
+							    <a href="#" class="btn btn-info card-link">Save Job</a>
+							    <a href="#" class="btn btn-info card-link">Apply</a>
+							  </div>
+						</div>
+						<div class="card">
+							  <div class="card-body">
+							    <h5 class="card-title">Research Assistant</h5>
+							    <h6 class="card-subtitle mb-2 text-muted">ABS-CBN</h6>
+							    <p class="card-text">Graduate of any course. Above average oral and written communication skills. Proficient in MS Office Applications. Willing to learn and to be trained. Willing to travel</p>
+							    <a href="#" class="btn btn-info card-link">Save Job</a>
+							    <a href="#" class="btn btn-info card-link">Apply</a>
+							  </div>
+						</div>
+
+						<nav class="mt-3" aria-label="Page navigation example">
+							  <ul class="pagination">
+							    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+							    <li class="page-item"><a class="page-link" href="#">1</a></li>
+							    <li class="page-item"><a class="page-link" href="#">2</a></li>
+							    <li class="page-item"><a class="page-link" href="#">3</a></li>
+							    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+							  </ul>
+						</nav>
+					</div>	
+				</div>
+
+				<div class="col-12 col-md-12 col-lg-3" >
+					<div class="jobimages">
+						<div class="row companies">
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/accenture.jpg" alt="Accenture" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/ibm.jpg" alt="IBM" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/nestle.png" alt="Nestle" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/samsung.png" alt="Samsung" class="img-thumbnail">	
+							</div>	
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/toyota.jpeg" alt="Toyota" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/abs-cbn.png" alt="Abs-Cbn" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/bdo.png" alt="BDO" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/bpi.jpeg" alt="BPI" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/cebu-pacific.png" alt="Cebu Pacific" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/jollibee.jpeg" alt="Jollibee Foods Corporation" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/pldt.png" alt="PLDT" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/petron.png" alt="Petron" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/psbank.png" alt="PSBank" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/phinma.jpeg" alt="Phinma" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/shell.jpeg" alt="Shell" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/smart.png" alt="Smart" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/mercury.jpg" alt="Mercury" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/ayala.png" alt="Ayala" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/globe.jpeg" alt="Globe" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/jg.png" alt="JG Summit" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/lt.jpeg" alt="LT Group" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/meralco.png" alt="Meralco" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/puregold.jpg" alt="Puregold" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/robinsons.jpeg" alt="Robinsons" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/sanmiguel.png" alt="San Miguel" class="img-thumbnail">	
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/security.png" alt="Security Bank" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/urc.png" alt="URC" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/asia.png" alt="Asia" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/allied.jpeg" alt="Allied Bank" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/cebuana.png" alt="Cebuana" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/china.jpeg" alt="China Bank" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/gma.png" alt="GMA" class="img-thumbnail">
+							</div>
+							<div class="col-4 col-md-3 col-lg-4">
+								<img src="assets/images/pal.png" alt="PAL" class="img-thumbnail">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Footer -->
+		<footer class="page-footer font-small blue pt-4">
+		    <div class="container-fluid text-center text-md-left">
+		      <div class="row">
+		        <div class="col-md-3 offset-md-2 mb-md-0 mb-3">
+		            <h5 class="text-uppercase footerLinks">Company</h5>
+		            <ul class="list-unstyled ulFooter">
+		              <li>
+		                <a href="about.html">Overview</a>
+		              </li>
+		              <li>
+		                <a href="about.html">About Us</a>
+		              </li>
+		              <li>
+		                <a href="about.html">Mission</a>
+		              </li>
+		              <li>
+		                <a href="about.html">Vision</a>
+		              </li>
+		            </ul>
+		          </div>
+		        <hr class="clearfix w-100 d-md-none pb-3">
+		        <div class="col-md-3 mb-md-0 mb-3">
+		            <h5 class="text-uppercase footerLinks">Careers</h5>
+		            <ul class="list-unstyled ulFooter">
+		              <li>
+		                <a href="job-openings.html">Web Development</a>
+		              </li>
+		              <li>
+		                <a href="job-openings.html">Engineering</a>
+		              </li>
+		              <li>
+		                <a href="job-openings.html">Human Resources</a>
+		              </li>
+		              <li>
+		                <a href="job-openings.html">Healthcare</a>
+		              </li>
+		            </ul>
+		          </div>
+		          <hr class="clearfix w-100 d-md-none pb-3">		          
+		          <div class="col-md-3 mb-md-0 mb-3">
+		            <h5 class="text-uppercase footerLinks">Contact Us</h5>
+		            <ul class="list-unstyled ulFooter">
+		              <li>
+		                <a href="contact.html">Email Us</a>
+		              </li>
+		              <li>
+		                <a href="contact.html">Site Map</a>
+		              </li>
+		            </ul>
+		          </div>
+		      </div>
+		    </div>		    
+		    <div class="footer-copyright text-center py-3 copyright">© 2018 Copyright:
+		      <span class="copyrightName"> This website is created for educational purposes only. Credits to the owner of the images.</span>
+		    </div>
+		</footer>
+		<!-- end of footer -->
+
+		<!-- wow js -->
+	    <script src="assets/js/wow.min.js"></script>
+        <script>
+        new WOW().init();
+        </script>
+
+		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	    <!-- external bootstrap.js -->
+	    <script src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

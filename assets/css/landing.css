@@ -1,0 +1,204 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Muli', sans-serif;
+}
+
+/*css for index.html*/
+
+.navbar-expand-lg {
+	background-color: #006186;
+}
+
+.companyName {
+	font-size: 40px;
+	border-radius: 10%;
+	color: #202020;	
+}
+
+.companyName:hover {
+	text-decoration: none;
+	color: #202020;
+}
+
+.landingImage {
+	background-image: url(../images/landing.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+}
+
+#searchBar {
+	width: 500px;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#searchHeading {
+    position: absolute;
+    top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+    background-color: rgba(0,0,0, .5);
+    color: white;
+    padding: 20px;
+    width: 550px;
+	color: white;
+}
+
+.nav-item {
+	color: #fff!important;
+}
+
+footer {
+	background-color: #29334C;	
+}
+
+.ulFooter {
+	margin-top: 10px;
+	list-style: none;
+	color: white;
+}
+
+.footerLinks {
+	font-size: 20px;
+	color: #44A1A0;
+}
+
+.ulFooter a {
+	color: white;
+	text-decoration: none;
+}
+
+.footerLinks:hover {
+	text-decoration: none;
+	color: #44A1A0;
+}
+
+.copyright {
+	color: #fff;
+}
+
+/*media queries*/
+
+/*ipad pro*/
+@media (min-width: 769px) and (max-width: 1024px) {
+
+	#searchHeading {
+	    position: absolute;
+	    top: 45%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	    background-color: rgba(0,0,0, .5);
+	    color: white;
+	    padding: 20px;
+	    width: 550px;
+		color: white;
+	}
+
+	#searchBar {
+		width: 500px;
+		position: absolute;
+		top: 54%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}
+
+/*for tablets*/
+@media (min-width: 451px) and (max-width: 768px) {
+
+	#navItems a {
+		text-align: right;
+	}
+
+	#searchHeading {
+	    position: absolute;
+	    top: 47%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	    background-color: rgba(0,0,0, .5);
+	    color: white;
+	    padding: 20px;
+	    width: 550px;
+		color: white;
+	}
+
+	#searchBar {
+		width: 500px;
+		position: absolute;
+		top: 58%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}
+
+/*mobile */
+@media (min-width: 321px) and (max-width: 450px) {
+
+	.companyName {
+		display: none;
+	}
+
+	#searchHeading {
+	    position: absolute;
+	    top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	    background-color: rgba(0,0,0, .5);
+	    color: white;
+	    padding: 20px;
+	    width: 100%;
+		color: white;
+	}
+
+	#searchBar {
+		width: 320px;
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+}
+
+@media only screen and (max-width: 320px) {
+
+	.companyName {
+		display: none;
+	}
+
+	#searchHeading {
+	    position: absolute;
+	    top: 40%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		text-align: center;
+	    background-color: rgba(0,0,0, .5);
+	    color: white;
+	    padding: 20px;
+	    width: 100%;
+		color: white;
+    }
+
+	#searchBar {
+		width: 300px;
+		position: absolute;
+		top: 65%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}	
+
+}	
+
+
+
